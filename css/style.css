@@ -1,0 +1,24 @@
+@font-face {
+	font-family: "ibm";
+	src: url("../fonts/ibm.woff") format("woff");
+}
+* {
+	font-family: ibm;
+	font-size: 20px;
+	list-style: square;
+	background-color: black;
+	color: cyan;
+}
+
+.container {
+	margin: 0 auto;
+	width: 768px;
+}
+
+li,
+a {
+	text-decoration: none;
+}
+span {
+	color: darkcyan;
+}
