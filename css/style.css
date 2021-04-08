@@ -8,6 +8,7 @@
 	list-style: square;
 	background-color: black;
 	color: cyan;
+	text-shadow: 0 0 0.5px cyan, 0 0 1px cyan, 0 0 7px cyan;
 }
 
 .container {
@@ -19,6 +20,36 @@ li,
 a {
 	text-decoration: none;
 }
-span {
-	color: darkcyan;
+
+#blink {
+	-webkit-animation: blink 0.4s linear infinite;
+	animation: blink 0.4s linear infinite;
+}
+@-webkit-keyframes blink {
+	50% {
+		color: rgb(0, 255, 255);
+		text-shadow: 0 0 0.5px cyan, 0 0 1px cyan, 0 0 7px cyan;
+	}
+	51% {
+		color: rgba(0, 255, 255, 0);
+		text-shadow: none;
+	}
+	100% {
+		color: rgba(0, 255, 255, 0);
+		text-shadow: none;
+	}
+}
+@keyframes blink {
+	50% {
+		color: rgb(0, 255, 255);
+		text-shadow: 0 0 0.5px cyan, 0 0 1px cyan, 0 0 7px cyan;
+	}
+	51% {
+		color: rgba(0, 255, 255, 0);
+		text-shadow: none;
+	}
+	100% {
+		color: rgba(0, 255, 255, 0);
+		text-shadow: none;
+	}
 }
